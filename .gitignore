@@ -26,3 +26,38 @@ dotnet-install.sh
 __pycache__/
 venv/
 *.pth
+
+# Additional SwarmUI-specific ignores
+*.log
+*.tmp
+*.cache
+fix_script_info_*.txt
+launch-*.sh
+launch-*.bat
+launch-*.ps1
+install-*.sh
+install-*.bat
+update-*.sh
+update-*.bat
+
+# Ignore docker-related files if you don't want to track them
+docker-compose.yml
+Dockerfile
+
+# Ignore any potential sensitive or local configuration files
+*.config
+*.secrets
+
+# Ignore potential build artifacts
+*.dll
+*.exe
+*.pdb
+
+# Ignore potential package manager directories
+packages/
+node_modules/
+
+# Ignore any backup files
+*~
+*.bak
+*.swp
